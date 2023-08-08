@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    image: {
+      type: String,
+      required: true,
+    },
     password: {
       type: String,
       required: true,
@@ -23,6 +27,11 @@ const userSchema = new mongoose.Schema(
     },
     occupation: {
       type: String,
+      required: true,
+    },
+    roll: {
+      enum: ["user", "admin", "providerConnector", "consumerConnector"],
+      default: "user",
       required: true,
     },
     provider: [
