@@ -23,6 +23,8 @@ app.get("/", (req, res) => {
 const port = process.env.PORT || 8080;
 const uri = process.env.MONGO_URI;
 
+const userRoutes = require("./routes/user.route");
+
 /* DB CONNECTION */
 mongoose
   .connect(uri, { useUnifiedTopology: true })

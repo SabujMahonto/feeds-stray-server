@@ -52,6 +52,10 @@ const userSchema = new mongoose.Schema(
         ref: "Review",
       },
     ],
+    checkpost: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Checkpost",
+    },
   },
   {
     timestamps: true,
