@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+
 const contributionSchema = new mongoose.Schema(
   {
     provider: {
-      type: mongoose.Schema.type.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Provider",
     },
     name: {
@@ -18,4 +19,5 @@ const contributionSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
 module.exports = mongoose.model("Contribution", contributionSchema);
