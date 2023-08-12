@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const consumerSchema = new mongoose.Schema(
   {
     name: {
@@ -16,7 +17,7 @@ const consumerSchema = new mongoose.Schema(
     consumptions: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Consumptions",
+        ref: "Consumption",
       },
     ],
     user: {
@@ -28,4 +29,5 @@ const consumerSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
 module.exports = mongoose.model("Consumer", consumerSchema);

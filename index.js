@@ -34,7 +34,7 @@ app.use("/api/consumers", consumerRoutes);
 app.use("/api/checkpost", checkpostRoutes);
 
 /* VARIABLES */
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 const uri = process.env.MONGO_URI;
 
 /* DB CONNECTION */
