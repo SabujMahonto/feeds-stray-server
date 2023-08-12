@@ -1,0 +1,19 @@
+server:
+port:5000
+host:localhost
+
+database:
+provider: mongodb
+url: mongodb+srv://feedsdb:GtWRJ7XsSjLlypdb@cluster0.e66gcze.mongodb.net/feeds?retryWrites=true&w=majority
+user: feedsdb
+password: GtWRJ7XsSjLlypdb
+cluster: cluster0.e66gcze
+iconnect : cluster0.e66gcze.mongodb.net
+pipeline : sea@2.0  
+
+backplate : 
+permission: null
+usage: redis
+cluster: cluster0.e66gcze
+cache : all 
+pipeline : sea@2.0  
