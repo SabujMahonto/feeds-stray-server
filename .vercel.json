@@ -1,16 +1,19 @@
 {
-  "verson": 2,
-  "build": [
+  "version": 2,
+  "bulids": [
     {
-      "src": "./index.js",
-      "use": "@vercel/node"
+      "src": "dist/app.js",
+      "use": "@vercel/node",
+      "config": {
+        "includedFiles": ["dist/**"]
+      }
     }
   ],
+  "bulidCommand": "yarn start",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/",
-      "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"]
+      "dist": "dist/app.js"
     }
   ]
 }
